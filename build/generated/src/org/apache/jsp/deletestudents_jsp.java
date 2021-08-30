@@ -1,0 +1,292 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class deletestudents_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html lang=\"en\">\r\n");
+      out.write("\r\n");
+      out.write("<head>\r\n");
+      out.write("  <title>Academics &mdash; Website by Colorlib</title>\r\n");
+      out.write("  <meta charset=\"utf-8\">\r\n");
+      out.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("  <link href=\"https://fonts.googleapis.com/css?family=Muli:300,400,700,900\" rel=\"stylesheet\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"fonts/icomoon/style.css\">\r\n");
+      out.write("\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/jquery-ui.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/owl.carousel.min.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/owl.theme.default.min.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/owl.theme.default.min.css\">\r\n");
+      out.write("\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/jquery.fancybox.min.css\">\r\n");
+      out.write("\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/bootstrap-datepicker.css\">\r\n");
+      out.write("\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"fonts/flaticon/font/flaticon.css\">\r\n");
+      out.write("\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/aos.css\">\r\n");
+      out.write("  <link href=\"css/jquery.mb.YTPlayer.min.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\">\r\n");
+      out.write("\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"css/style.css\">\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("</head>\r\n");
+      out.write("\r\n");
+      out.write("<body data-spy=\"scroll\" data-target=\".site-navbar-target\" data-offset=\"300\">\r\n");
+      out.write("\r\n");
+      out.write("  <div class=\"site-wrap\">\r\n");
+      out.write("\r\n");
+      out.write("    <div class=\"site-mobile-menu site-navbar-target\">\r\n");
+      out.write("      <div class=\"site-mobile-menu-header\">\r\n");
+      out.write("        <div class=\"site-mobile-menu-close mt-3\">\r\n");
+      out.write("          <span class=\"icon-close2 js-menu-toggle\"></span>\r\n");
+      out.write("        </div>\r\n");
+      out.write("      </div>\r\n");
+      out.write("      <div class=\"site-mobile-menu-body\"></div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    <div class=\"py-2 bg-light\">\r\n");
+      out.write("      <div class=\"container\">\r\n");
+      out.write("        <div class=\"row align-items-center\">\r\n");
+      out.write("          <div class=\"col-lg-9 d-none d-lg-block\">\r\n");
+      out.write("            <a href=\"#\" class=\"small mr-3\"><span class=\"icon-question-circle-o mr-2\"></span> Have a questions?</a> \r\n");
+      out.write("            <a href=\"#\" class=\"small mr-3\"><span class=\"icon-phone2 mr-2\"></span> 10 20 123 456</a> \r\n");
+      out.write("            <a href=\"#\" class=\"small mr-3\"><span class=\"icon-envelope-o mr-2\"></span> info@mydomain.com</a> \r\n");
+      out.write("          </div>\r\n");
+      out.write("          \r\n");
+      out.write("        </div>\r\n");
+      out.write("      </div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("    <header class=\"site-navbar py-4 js-sticky-header site-navbar-target\" role=\"banner\">\r\n");
+      out.write("\r\n");
+      out.write("      <div class=\"container\">\r\n");
+      out.write("        <div class=\"d-flex align-items-center\">\r\n");
+      out.write("          <div class=\"site-logo\">\r\n");
+      out.write("            <a href=\"index.jsp\" class=\"d-block\">\r\n");
+      out.write("              <img src=\"images/logo.jpg\" alt=\"Image\" class=\"img-fluid\">\r\n");
+      out.write("            </a>\r\n");
+      out.write("          </div>\r\n");
+      out.write("          <div class=\"mr-auto\">\r\n");
+      out.write("            <nav class=\"site-navigation position-relative text-right\" role=\"navigation\">\r\n");
+      out.write("              <ul class=\"site-menu main-menu js-clone-nav mr-auto d-none d-lg-block\">\r\n");
+      out.write("                <li>\r\n");
+      out.write("                  <a href=\"index.jsp\" class=\"nav-link text-left\">Home</a>\r\n");
+      out.write("                </li>\r\n");
+      out.write("                \r\n");
+      out.write("                <li class=\"has-children\" class=\"active\">\r\n");
+      out.write("                  <a href=\"teachers.jsp\" class=\"nav-link text-left\">Teachers</a>\r\n");
+      out.write("                  <ul class=\"dropdown\">\r\n");
+      out.write("                    <li><a href=\"addteachers.jsp\">Add Teachers</a></li>\r\n");
+      out.write("                    <li><a href=\"Modifyteachers.jsp\">Modify Teachers</a></li>\r\n");
+      out.write("                    <li><a href=\"deleteteachers.jsp\">Delete Teachers</a></li>\r\n");
+      out.write("                  </ul>\r\n");
+      out.write("                </li>\r\n");
+      out.write("                <li class=\"has-children\" >\r\n");
+      out.write("                  <a href=\"students.jsp\" class=\"nav-link text-left\">Students</a>\r\n");
+      out.write("                  <ul class=\"dropdown\">\r\n");
+      out.write("                    <li><a href=\"addstudents.jsp\">Add Students</a></li>\r\n");
+      out.write("                    <li><a href=\"modifystudents.jsp\">Modify Students</a></li>\r\n");
+      out.write("                    <li><a href=\"deletestudents.jsp\">Delete Students</a></li>\r\n");
+      out.write("                  </ul>\r\n");
+      out.write("                </li>\r\n");
+      out.write("                <li  >\r\n");
+      out.write("                  <a href=\"about.jsp\">About Us</a>\r\n");
+      out.write("                </li>\r\n");
+      out.write("              </ul>                                                                                                                                                                                                                                                                                          </ul>\r\n");
+      out.write("            </nav>\r\n");
+      out.write("\r\n");
+      out.write("          </div>\r\n");
+      out.write("          <div class=\"ml-auto\">\r\n");
+      out.write("            <div class=\"social-wrap\">\r\n");
+      out.write("              <a href=\"#\"><span class=\"icon-facebook\"></span></a>\r\n");
+      out.write("              <a href=\"#\"><span class=\"icon-twitter\"></span></a>\r\n");
+      out.write("              <a href=\"#\"><span class=\"icon-linkedin\"></span></a>\r\n");
+      out.write("\r\n");
+      out.write("              <a href=\"#\" class=\"d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black\"><span\r\n");
+      out.write("                class=\"icon-menu h3\"></span></a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("          </div>\r\n");
+      out.write("         \r\n");
+      out.write("        </div>\r\n");
+      out.write("      </div>\r\n");
+      out.write("\r\n");
+      out.write("    </header>\r\n");
+      out.write("\r\n");
+      out.write("    \r\n");
+      out.write("    <div class=\"site-section ftco-subscribe-1 site-blocks-cover pb-4\" style=\"background-image: url('images/bg_1.jpg')\">\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("          <div class=\"row align-items-end\">\r\n");
+      out.write("            <div class=\"col-lg-7\">\r\n");
+      out.write("              <h2 class=\"mb-0\">Delete Students</h2>\r\n");
+      out.write("             \r\n");
+      out.write("            </div>\r\n");
+      out.write("          </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("      </div> \r\n");
+      out.write("    \r\n");
+      out.write("\r\n");
+      out.write("    <div class=\"custom-breadcrumns border-bottom\">\r\n");
+      out.write("      <div class=\"container\">\r\n");
+      out.write("        <a href=\"index.jsp\">Home</a>\r\n");
+      out.write("        <span class=\"mx-3 icon-keyboard_arrow_right\"></span>\r\n");
+      out.write("        <span class=\"current\">Delete Students</span>\r\n");
+      out.write("      </div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("      <form action=\"Deletestudent\" method=\"post\">\r\n");
+      out.write("    <div class=\"site-section\">\r\n");
+      out.write("        ");
+ if (request.getAttribute("error") != null ) { 
+      out.write("\r\n");
+      out.write("                <div class='error'>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${error}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</div>\r\n");
+      out.write("                ");
+ } 
+      out.write("\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("          <div class=\"row\">\r\n");
+      out.write("                <div class=\"col-md-6 form-group\">\r\n");
+      out.write("                    <label for=\"fname\">First Name</label>\r\n");
+      out.write("                    <input type=\"text\" name=\"first_name\" id=\"fname\" class=\"form-control form-control-lg\" required=\"required\" >\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"col-md-6 form-group\">\r\n");
+      out.write("                    <label for=\"lname\">Last Name</label>\r\n");
+      out.write("                    <input type=\"text\" name=\"last_name\" id=\"lname\" class=\"form-control form-control-lg\" required=\"required\">\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("           \r\n");
+      out.write("                \r\n");
+      out.write("            <div class=\"row\">\r\n");
+      out.write("                <div class=\"col-12\">\r\n");
+      out.write("                    <input type=\"submit\" value=\"Delete Student\" class=\"btn btn-primary btn-lg px-5\" >\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("          </form>\r\n");
+      out.write("    \r\n");
+      out.write("\r\n");
+      out.write("    <div class=\"section-bg style-1\" style=\"background-image: url('images/hero_1.jpg');\">\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("          <div class=\"row\">\r\n");
+      out.write("            <div class=\"col-lg-4 col-md-6 mb-5 mb-lg-0\">\r\n");
+      out.write("              <span class=\"icon flaticon-mortarboard\"></span>\r\n");
+      out.write("              <h3>Our Philosphy</h3>\r\n");
+      out.write("              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea? Dolore, amet reprehenderit.</p>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            <div class=\"col-lg-4 col-md-6 mb-5 mb-lg-0\">\r\n");
+      out.write("              <span class=\"icon flaticon-school-material\"></span>\r\n");
+      out.write("              <h3>Academics Principle</h3>\r\n");
+      out.write("              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae, iure repellat quis delectus ea?\r\n");
+      out.write("                Dolore, amet reprehenderit.</p>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            <div class=\"col-lg-4 col-md-6 mb-5 mb-lg-0\">\r\n");
+      out.write("              <span class=\"icon flaticon-library\"></span>\r\n");
+      out.write("              <h3>Key of Success</h3>\r\n");
+      out.write("              <p>Work Hard!</p>\r\n");
+      out.write("            </div>\r\n");
+      out.write("          </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("      </div>\r\n");
+      out.write("      \r\n");
+      out.write("\r\n");
+      out.write("    <div class=\"footer\">\r\n");
+      out.write("      <div class=\"container\">\r\n");
+      out.write("        <div class=\"row\">\r\n");
+      out.write("          <div class=\"col-lg-3\">\r\n");
+      out.write("            <p class=\"mb-4\"><img src=\"images/logo.png\" alt=\"Image\" class=\"img-fluid\"></p>\r\n");
+      out.write("            <p>Designed by Yasmine Abdelhak</p>  \r\n");
+      out.write("            \r\n");
+      out.write("          </div>\r\n");
+      out.write("          \r\n");
+      out.write("\r\n");
+      out.write("        \r\n");
+      out.write("      </div>\r\n");
+      out.write("    </div>\r\n");
+      out.write("    \r\n");
+      out.write("\r\n");
+      out.write("  </div>\r\n");
+      out.write("  <!-- .site-wrap -->\r\n");
+      out.write("\r\n");
+      out.write("  <!-- loader -->\r\n");
+      out.write("  <div id=\"loader\" class=\"show fullscreen\"><svg class=\"circular\" width=\"48px\" height=\"48px\"><circle class=\"path-bg\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke=\"#eeeeee\"/><circle class=\"path\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke-miterlimit=\"10\" stroke=\"#51be78\"/></svg></div>\r\n");
+      out.write("\r\n");
+      out.write("  <script src=\"js/jquery-3.3.1.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery-migrate-3.0.1.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery-ui.js\"></script>\r\n");
+      out.write("  <script src=\"js/popper.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/bootstrap.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/owl.carousel.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery.stellar.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery.countdown.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/bootstrap-datepicker.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery.easing.1.3.js\"></script>\r\n");
+      out.write("  <script src=\"js/aos.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery.fancybox.min.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery.sticky.js\"></script>\r\n");
+      out.write("  <script src=\"js/jquery.mb.YTPlayer.min.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("  <script src=\"js/main.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("</body>\r\n");
+      out.write("\r\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

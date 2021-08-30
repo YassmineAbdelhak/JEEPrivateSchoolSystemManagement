@@ -1,0 +1,12 @@
+SMAP
+deleteteachers_jsp.java
+JSP
+*S JSP
+*F
++ 0 deleteteachers.jsp
+deleteteachers.jsp
+*L
+1,139:44
+140,3:183,3
+143,91:192
+*E
